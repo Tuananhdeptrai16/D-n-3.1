@@ -13,3 +13,15 @@ tabs.forEach((tab, index) => {
         tab.classList.add('text__shadow')
     }    
 });
+// javsceipt phan hero 
+window.addEventListener('load', ()=> {
+    let hero2=$('.hero-img__2')
+    hero2.classList.add('slide-down')
+    let hero13=$$('.hero-img__1')
+    hero13.forEach((hero, index)=> {
+        hero.classList.add('slide-down')
+
+    })
+   
+
+})
