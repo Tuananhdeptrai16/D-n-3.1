@@ -7,6 +7,7 @@
     --text-color-white :#fff;
     --Primary-color-black:#152427;
     --text-color-black-gray: #575D5E;
+    --Scondery-color-light-green:#E2EDDF;
 }
 body, html {
     font-size: 62.5%;
@@ -235,4 +236,181 @@ header::after {
 /* css cua javascript  */
 .slide-down {
     transform: translateY(0);
+}
+/* =======================================================brand =============================== */
+.brand {
+    margin-top: 130px;
+}
+.brand-box {
+    display:flex;
+    align-items: center;
+    width: 1140px;
+    height: 201px;
+    border-radius: 100.5px;
+    background: var(--Scondery-color-light-green, #E2EDDF);
+}
+.brand--google {
+    margin-left: 124px;
+    color: var(--Primary-color-black-green, #143C3C);
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+.brand-slack {
+    margin-left: 47px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.brand-slack-name {
+    color: var(--Primary-color-black-green, #143C3C);
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.brand-Agworld {
+    margin-left: 51px;
+    display:flex;   
+    align-items:center;
+    justify-content:center;
+}
+.brand-Agworld-name {
+    color: #163C35;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+.brand-Agworld-img {
+    margin-right: 11px;
+}
+.brand--RioTinto {
+    margin-left: 64px;
+    color: var(--Primary-color-black-green, #143C3C);
+    font-family: "Sonsie One";
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+.brand-heroku {
+    margin-left: 63px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.brand-heroku-name {
+    color: var(--Primary-color-black-green, #143C3C);
+    font-family: Poppins;
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 1.995px;
+}
+.brand-heroku-img{
+    margin-right: 11px;
+}
+/* ===================================================services ================================================= */
+
+.service-top {
+    margin-top: 106px;
+    display: flex;
+    align-items: center;
+    gap: 422px;
+
+}
+.service__heading--subheading {
+    color: var(--Primary-color-black, #152427);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+}
+.service__heading--subheading::before {
+    content: "";
+    margin: 9px 21px 9px 0;
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background: var(--Primary-color-black, #152427);
+}
+.service__heading--heading {
+    width: 520px;
+    height: 104px;
+    color: var(--Primary-color-black, #152427);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 52px; /* 123.81% */
+}
+.service__heading--heading::after {
+    content: "";
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background: var(--Primary-color-black, #152427);
+    margin: 0 0px 9px 18px;
+}
+.service__link {
+    margin-top: 53px;
+    display: flex;
+    gap: 17px;
+}
+.service__link--left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: var(--Scondery-color-light-green);
+    border-radius: 50%;
+    color:rgba(21, 36, 39, 1) ;
+    transition: 0.3s;
+    border: none;
+}
+.service__link--right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: var(--Scondery-color-light-green);
+    border-radius: 50%;
+    color:rgba(21, 36, 39, 1) ;
+    transition: 0.3s;
+    border: none;
+}
+.service__link--left:hover, 
+.service__link--right:hover{
+    background: var(--Primary-color-black-green);
+    color: #fff;
+}
+.service__image {
+    width: 370px;
+    height: 318px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+.service-list {
+    margin-top: 76px;
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+}
+.service-item {
+    width: 370px;
+    border-radius: 20px;
+    transform: translateX(0);
+    transition:transform 0.5s ease ;
+
+}
+.service-item:hover {
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+.service-list__content--heading {
+    color: var(--Primary-color-black, #152427);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.service-list__content--desc {
+    margin-top: 18px;
+    color: var(--text-color-light-gray, #7D8188);
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+}
+.service-list__content {
+    padding: 24px 84px 23px 18px;
 }

@@ -25,3 +25,36 @@ window.addEventListener('load', ()=> {
    
 
 })
+// js phan service 
+const btnRight = $('.service__link--right')
+const btnLeft = $('.service__link--left')
+const listItems = $$('.service-item')
+let length=listItems.length
+console.log('length :',listItems[0] );
+let current = 0
+
+const clickHander =() => {
+    if (current == length - 3)
+        {
+            current=0
+        }else{
+            current++
+            
+        }
+        let width=listItems[0].offsetWidth + 16;
+        listItems.forEach((item, index) => {
+            item.style.transform = `translateX(${-width * current}px)`;
+        });
+}
+btnRight.onclick = clickHander;
+btnLeft.onclick = function () {
+    if (current==0){
+        current =length-1
+    }else{
+        current--
+    }
+    let width=listItems[0].offsetWidth + 16;
+    listItems.forEach((item, index) => {
+        item.style.transform = `translateX(${-width * current}px)`;
+    });
+}
