@@ -46,10 +46,16 @@ const clickHander =() => {
             item.style.transform = `translateX(${-width * current}px)`;
         });
 }
-btnRight.onclick = clickHander;
+let handerEvent = setInterval(clickHander, 4000)
+btnRight.onclick = function() {
+    clearInterval(handerEvent)
+    clickHander()
+    handerEvent = setInterval(clickHander, 4000)
+};
 btnLeft.onclick = function () {
+    clearInterval(handerEvent)
     if (current==0){
-        current =length-1
+        current = length-1
     }else{
         current--
     }
@@ -57,4 +63,6 @@ btnLeft.onclick = function () {
     listItems.forEach((item, index) => {
         item.style.transform = `translateX(${-width * current}px)`;
     });
+    handerEvent = setInterval(clickHander, 4000)
+
 }
