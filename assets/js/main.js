@@ -30,7 +30,6 @@ const btnRight = $('.service__link--right')
 const btnLeft = $('.service__link--left')
 const listItems = $$('.service-item')
 let length=listItems.length
-console.log('length :',listItems[0] );
 let current = 0
 
 const clickHander =() => {
@@ -66,3 +65,30 @@ btnLeft.onclick = function () {
     handerEvent = setInterval(clickHander, 4000)
 
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    let stats = $('.top')
+    let currentStats=0;
+    let targetrStats=48;
+
+    let interval = setInterval(()=> {
+        currentStats++;
+        stats.innerText = currentStats + '%'
+
+        if (currentStats >= targetrStats) {
+            clearInterval(interval)
+        }
+    }, 100)
+})
+document.addEventListener('DOMContentLoaded', function(){
+    let statsBottom= $('.last')
+    let current = 0
+    let target =26
+    let interval =setInterval (()=> {
+        current++
+        statsBottom.innerText= current +'%'
+        if(current >= target) {
+            clearInterval(interval)
+        }
+    }, 200)
+})
