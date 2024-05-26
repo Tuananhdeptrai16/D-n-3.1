@@ -37,7 +37,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
-<body style="height: 10000px;">
+<body>
     <header class="fix-header">
         <div class="main-content">
             <header class="header">
@@ -64,14 +64,14 @@
                                 <li class="navigation__li text__shadow"><a href="#">Home</a>
                                 <div class="line active"></div>
                                 </li>
-                                <li class="navigation__li "><a href="#!">About</a>
+                                <li class="navigation__li "><a href="#about">About</a>
                                 <div class="line "></div>
                                 </li>
-                                <li class="navigation__li"><a href="#!">Blog
+                                <li class="navigation__li"><a href="#blog">Blog
                                 <div class="line"></div>
                                 </a>
                                 </li>
-                                <li class="navigation__li"><a href="#!">Contact</a>
+                                <li class="navigation__li"><a href="#contact">Contact</a>
                                 <div class="line"></div>
                                 </li>
                             </ul>   
@@ -247,7 +247,7 @@
             </div>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="main-content">
                 <section class="about-box">
                     <div class="about__bg"></div>
@@ -313,8 +313,11 @@
                         </figure>
                         <div class="process-content__content">
                             <strong class="process-content__content--stats" data-content="Learn more">01.</strong>
-                            <h2 class="process-content__content--title">Project idea</h2>
-                            <p class="process-content__content--desc">We customse a ensure aligment and difine key mileones and defiverables experience tells us the best solutions are the ones  deated with clients.</p>
+                            <div class="process-content__content--titlebox">
+                                <h2 class="process-content__content--title">Project idea</h2>
+                                <a href="#!" class="process-content__content--link">Learn more </a>
+                            </div>
+                            <as class="process-content__content--desc"></p>
                         </div>
                         <div class="process-content__content">
                             <strong class="process-content__content--stats">02.</strong>
@@ -331,8 +334,181 @@
 
             </div>
         </section>
+        <section class="pastProject">
+            <div class="main-content">
+                <div class="pastProject-box">
+                    <article class="pastProject-content">
+                        <h2 class="heading pastProject-content__heading">A quick glance of our past projects</h2>
+                        <div class="pastProject__desc">
+                            <p class="pastProject__desc--subheading">Are you strive for the fast project simplicity and clarity. Great 
+                                design is born of those two things. 
+                            </p>
+                            <a href="" class="pastProject-link">Browse all Projects</a>
+                            <img src="./assets/img/left arrow.svg" alt="">
+                        </div>
+                    </article>
+                    <figure class="pastProject-video">
+                        <video src="./assets/video/video1.mp4" class="pastProject-video__link" controls></video>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="main-content">
+                <div class="features-box">
+                    <article class="features-header">
+                        <h2 class="features-header__heading">Share the features that help your customers</h2>
+                        <p class="features-header__desc">You already know that the customer experience doesn't end with a sale — it's an ongoing work in progress that companies should be constantly seeking to improve and iterate on.</p>
+
+                    </article>
+                    <section class="features-list">
+                        <!-- item 1  -->
+                        <article class="features-item">
+                            <div class="features-item__boxcontent">
+                                <img src="./assets/img/features1.svg" alt="features1" class="features-item__image">
+                                <p class="features-item__heading " >Blog</p>
+                                <p class="features-item__subheading">We’ve researched numerous agencies and complied a list of digital marketing agency blogs you should read to stay ahead of your rivals and succeed online!</p>
+                            </div>
+                        </article>
+                        <!-- item 2  -->
+                        <article class="features-item">
+                            <div class="features-item__boxcontent">
+                                <img src="./assets/img/features2.svg" alt="features2" class="features-item__image">
+                                <p class="features-item__heading " >Documention</p>
+                                <p class="features-item__subheading">In this article, we discuss the different types of documentation, what makes for great technical documentation, and provide examples.</p>
+                            </div>
+                        </article>
+                        <!-- item 3  -->
+                        <article class="features-item">
+                            <div class="features-item__boxcontent">
+                                <img src="./assets/img/features3.svg" alt="features3" class="features-item__image">
+                                <p class="features-item__heading " >Customers</p>
+                                <p class="features-item__subheading">Your customers have high expectations — and if your business can't meet them, they're going to leave you for your competitors.</p>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="newProduct" id="blog">
+            <div class="main-content">
+                <div class="newProduct-box">
+                    <article class="newProduct-header">
+                        <div class="newProduct-header__heading">
+                            <p class="subheading">
+                                BLOG & ARTICLES
+                            </p>
+                            <h2 class="heading newProduct-header__h2--heading">
+                                Take a look at our latest articles and resources
+                            </h2>
+                        </div>
+                        <p class="newProduct-header__desc">The best agency are the ones ideated with clients. we corporate your ideas with memorable</p>
+                        
+                    </article>
+                    <section class="newProduct-list">
+                        <!-- item 1 -->
+                        <article class="newProduct-item">
+                            <figure class="newProduct-item__images">
+                                <img src="./assets/img/newProduct/newProduct1.png" alt="newProduct1" class="newProduct-item__images-img">
+                            </figure>
+                            <section class="newProduct-item__content">
+                                <a href="" class="newProduct-item__content--link">STORIES</a>
+                                <h2 class="newProduct-item__content--heading">What did we learn from nunning over 100 design sprints in less the year?</h2>
+                                <p class="newProduct-item__content--date">JANUARY 29, 2022</p>
+                            </section>
+                        </article>
+                        <!-- item 2 -->
+                        <article class="newProduct-item">
+                            <figure class="newProduct-item__images">
+                                <img src="./assets/img/newProduct/newProduct2.png" alt="newProduct2" class="newProduct-item__images-img">
+                            </figure>
+                            <section class="newProduct-item__content">
+                                <a href="" class="newProduct-item__content--link">STORIES</a>
+                                <h2 class="newProduct-item__content--heading">The difference between the UI/UX design a simple guide for beginner’s</h2>
+                                <p class="newProduct-item__content--date">JANUARY 29, 2022</p>
+                            </section>
+                        </article>
+                        <!-- item 3 -->
+                        <article class="newProduct-item">
+                            <figure class="newProduct-item__images">
+                                <img src="./assets/img/newProduct/newProduct3.png" alt="newProduct3" class="newProduct-item__images-img">
+                            </figure>
+                            <section class="newProduct-item__content">
+                                <a href="" class="newProduct-item__content--link">STORIES</a>
+                                <h2 class="newProduct-item__content--heading">How marketing can help your business more than anything.</h2>
+                                <p class="newProduct-item__content--date">JANUARY 29, 2022</p>
+                            </section>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="footer" id="contact">
+        <div class="main-content">
+            <div class="footer-box">
+                <section class="footer-content">
+                    <h2 class="footer-content__heading">Sign up for our newsletter</h2>
+                    <div class="footer-content__input">
+                        <input type="text" class="footer-content__input--input" placeholder="Enter your email">
+                        <a href="" class="footer-content__input--submit">
+                            <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 9H27M27 9L18.3333 1M27 9L18.3333 17" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>        
+                        </a>
+                    </div>
+                    <figure class="footer-social">
+                        <div class="footer-social--icon">
+                            <img src="./assets/img/footert/f.svg" alt="facebook ">
+                        </div>
+                        <div class="footer-social--icon">
+                            <img src="./assets/img/footert/insta.svg" alt="insta">
+                        </div>
+                        <div class="footer-social--icon">
+                            <img src="./assets/img/footert/twister.svg" alt="twister">
+                        </div>
+                    </figure>
+                </section>
+                <section class="footer-rows">
+                    <div class="footer-colums">
+                        <ul>
+                            <li class="footer-colums__heading">Pages</li>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Blog Post</li>
+                        </ul>
+                    </div>
+                    <div class="footer-colums">
+                        <ul>
+                            <li class="footer-colums__heading">Product</li>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Blog Post</li>
+                        </ul>
+                    </div>
+                    <div class="footer-colums">
+                        <ul>
+                            <li class="footer-colums__heading">Overview</li>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Blog Post</li>
+                        </ul>
+                    </div>
+                    <div class="footer-colums">
+                        <ul>
+                            <li class="footer-colums__heading">About us</li>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Blog Post</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
 
     </footer>
     <script src="./assets/js/main.js"></script>
