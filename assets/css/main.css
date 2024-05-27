@@ -833,8 +833,11 @@ header::after {
     color: #000;
     font-size: 1rem;
     font-weight: 500;
-    line-height: 12px; /* 120% */
-    
+    transition: all 0.5s ease;
+}
+.newProduct-item__content--link:hover {
+    background: var(--Primary-color-black-green);
+    color: #fff;
 }
 .newProduct-item__content--heading {
     margin-top: 20px;
@@ -872,7 +875,6 @@ header::after {
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.20);
 }
-
 /* /* ===================================footer =============================================  */
 .footer-box {
     margin-top: 186px;
@@ -931,7 +933,7 @@ footer {
     font-size: 2.2rem;
     color: var(--Scondery-color-gray, #6A8383);
 }
-.footer-colums li {
+.footer-colums li > a {
     color: var(--Scondery-color-gray, #6A8383);
     font-family: "Public Sans";
     font-size: 1.6rem;
@@ -939,12 +941,15 @@ footer {
     line-height: 36px; /* 225% */
     white-space: nowrap;
 }
-.footer-colums li:first-child {
+.footer-colums li:first-child > a {
     color: var(--text-color-white, #FFF);
     font-family: "Public Sans";
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 28px; /* 155.556% */
+}
+.footer-colums li > a:hover {
+    opacity: 0.8;
 }
 .footer-social {
     display: flex;
@@ -959,7 +964,17 @@ footer {
     height: 52px;
     border-radius: 50%;
     border: 1px solid  var(--Scondery-color-gray, #6A8383);
+    transition: 0.5s;
+}
+.footer-social--icon svg {
+    width: 26px;
+    height: 19px;
+   
 }
 .footer-social--icon:hover {
     background: #A75325;
+}
+.footer-colums li:first-child {
+    margin-bottom: 6px;
+
 }
