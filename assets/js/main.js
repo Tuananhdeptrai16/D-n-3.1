@@ -2,6 +2,7 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 const tabs = $$('.navigation__li');
 const lines = $$('.line');
+console.log(lines)
 
 tabs.forEach((tab, index) => {
     tab.onclick = function () {
@@ -92,3 +93,18 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }, 200)
 })
+
+//  login
+  const login = document.getElementById('login');
+        const loginModal = document.querySelector('.login');
+
+        login.onclick = function () {
+            console.log(123);
+            loginModal.classList.add('login-display');
+        }
+
+        window.onclick = function (event) {
+            if (event.target === loginModal) {
+                loginModal.classList.remove('login-display');
+            }
+        }
