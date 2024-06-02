@@ -72,34 +72,30 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentStats=0;
     let targetrStats=48;
 
-    let interval = setInterval(()=> {
+    let interval1 = setInterval(()=> {
         currentStats++;
         stats.innerText = currentStats + '%'
 
         if (currentStats >= targetrStats) {
-            clearInterval(interval)
+            clearInterval(interval1)
         }
     }, 100)
-})
-document.addEventListener('DOMContentLoaded', function(){
     let statsBottom= $('.last')
     let current = 0
     let target =26
-    let interval =setInterval (()=> {
+    let interval2 =setInterval (()=> {
         current++
         statsBottom.innerText= current +'%'
         if(current >= target) {
-            clearInterval(interval)
+            clearInterval(interval2)
         }
     }, 200)
 })
-
 //  login
   const login = document.getElementById('login');
         const loginModal = document.querySelector('.login');
 
         login.onclick = function () {
-            console.log(123);
             loginModal.classList.add('login-display');
         }
 

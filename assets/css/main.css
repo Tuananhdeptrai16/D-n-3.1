@@ -225,13 +225,11 @@ a {
     padding-top: 28px;
     position: sticky;
     top: 0;
-    z-index: 4;
+    z-index: 5;
     background: #fff ;  
 
 }
 .header {
-    width: 100%;
-    height: 100%;
     position: relative;
     display:flex;
     align-items:center;
@@ -349,7 +347,6 @@ header::after {
 }
 .hero__bg {
     position: absolute;
-    top: 122px;
     right: 150px;
     border-radius: 50%;
     background: #4dbb9a;
@@ -753,7 +750,6 @@ header::after {
 .process-content__content {
     position: relative;
     align-items: center;
-    justify-content: center;
     display: flex;
     width: 1140px;
     height: 185px;
@@ -1148,4 +1144,21 @@ footer {
 .footer-colums li:first-child {
     margin-bottom: 6px;
 
+}
+/* responsive  */
+.menu {
+    display: none;
+}
+.side_bar_btn {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.logo_mobile__img--image {
+    margin-right: 3px;
+}
+.logo_mobile__img {
+    display: flex;
+    align-items: center;
+    margin-right: 106px;
 }
