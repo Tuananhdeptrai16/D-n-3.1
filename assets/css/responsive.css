@@ -464,4 +464,9 @@
         width: 255px;
         height: 340px;
     }
+    .form-container {
+        scale: 1;
+        top: 25%;
+        left: 10%;
+    }
 }
